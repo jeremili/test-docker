@@ -1,6 +1,7 @@
 version: "3.9"
 services:
   web:
-    image: ghcr.io/jeremili/test/test:latest
+    image: ghcr.io/jeremili/test/test:1.2
+    restart: unless-stopped
     ports:
       - "9001:80"
